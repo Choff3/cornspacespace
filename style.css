@@ -1,0 +1,19 @@
+img {
+    height: 150px;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+    position: absolute;
+    top: 50%;
+    width: 150px;
+    size: 50%;
+ }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#background {
+    min-height: 100%; 
+}

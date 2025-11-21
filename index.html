@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Corn Space</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+	    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+	    <meta http-equiv="Pragma" content="no-cache"/>
+	    <meta http-equiv="Expires" content="0"/>
+    </head>
+    <body>
+        <div id="background"><img src="corn.jpg" alt="Corn!" onclick="aliceDeeJay()"/></div>
+    </body>
+    <script>
+    
+    function aliceDeeJay(){
+        var audio = new Audio('deejay.mp3');
+        audio.loop = false;
+        audio.play();
+        colors(); 
+    }
+
+    function colors(){
+        var i = 0;
+        function change() {
+        var doc = document.getElementById("background");
+        var color = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink"];
+        doc.style.backgroundColor = color[i];
+        i = (i + 1) % color.length;
+        }
+        setInterval(change, 100);
+    }
+    
+    </script>
+</html>
