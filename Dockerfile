@@ -1,3 +1,3 @@
-FROM nginxinc/nginx-unprivileged:latest
+FROM nginx/nginx-unprivileged:latest
 
 COPY .  /usr/share/nginx/html
